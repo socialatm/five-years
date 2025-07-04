@@ -5,11 +5,11 @@ from next_event.items import NextEventItem
 class EventSpider(scrapy.Spider):
     name = "event"
     allowed_domains = ["ufcstats.com"]
-    start_urls = ["http://ufcstats.com/statistics/events/upcoming?page=all"]
+    start_urls = ["http://ufcstats.com/statistics/events/upcoming"]
 
     custom_settings = {
         "FEEDS": {
-            "next_event.csv": {"format": "csv", "overwrite": True},
+            "next_event.csv": {"format": "csv", "overwrite": True, "encoding": "utf-8"},
         },
     }
 
