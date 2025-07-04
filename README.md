@@ -2,7 +2,7 @@
 UFC stats for the last five years
 ***
 ## Scrapers we need
-- [x] [next_event](https://github.com/socialatm/five-years/blob/main/next_event/readme.md)
+- [x] [ufc_next_event](https://github.com/socialatm/five-years/blob/main/ufc_next_event/readme.md)
 - [ ] ufc_event_details
 - [ ] ufc_fight_details
 - [ ] ufc_fight_results
