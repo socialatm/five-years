@@ -1,4 +1,4 @@
-## Next Event
+## UFC Event Details
 
 Find the next upcoming UFC event, and extract details about every fight scheduled for that event.
 
