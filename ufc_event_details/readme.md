@@ -8,9 +8,9 @@ Saved to a CSV file named [next_event.csv](https://github.com/socialatm/five-yea
 
 from the root directory:
 ```python
-cd next_event/next_event
+cd ufc_event_details/ufc_event_details
 ```
 then:
 ```python
-py -m scrapy crawl event
+py -m scrapy crawl ufc_events
 ```
