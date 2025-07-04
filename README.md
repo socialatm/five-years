@@ -25,7 +25,7 @@ ufc_fighter_tott.csv
 ```
 
 To download the CSV files without running any code, click:
-[Download stats](https://github.com/socialatm/ufcstats/archive/refs/heads/main.zip)
+[Download stats](https://github.com/socialatm/five-years/archive/refs/heads/main.zip)
 
 ***
 
