@@ -39,26 +39,14 @@ fights.to_csv("fight_details.csv", index=False)
 # load ufc_fight_results,csv into a DataFrame named fight_results
 fight_results = pd.read_csv("ufc_fight_results.csv")
 
-
 # change all column names to lowercase
 fight_results.columns = fight_results.columns.str.lower()
 
 # Strip leading/trailing whitespace from the 'event' column to ensure clean matching.
 fight_results['event'] = fight_results['event'].str.strip()
 
-#fight_results.info()
-#print(fight_results.head())
-print(events.event[0])
-print(fight_results.event[0])
-
-
 # only keep the rows where fight_results['event'] isin events['event']
 fight_results = fight_results[fight_results['event'].isin(events['event'])]
 
-
-
 # save the fight_results dataframe to a csv file named fight_results.csv
 fight_results.to_csv("fight_results.csv", index=False)
-
-#fight_results.info()
-#print(fight_results.head())
