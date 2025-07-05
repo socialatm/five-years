@@ -18,6 +18,9 @@ events = events[events['DATE'].dt.date >= five_years_ago]
 # change all column names to lowercase
 events.columns = events.columns.str.lower()
 
+# Strip leading/trailing whitespace from the 'event' column to ensure clean matching.
+events['event'] = events['event'].str.strip()
+
 # save the events dataframe to a csv file named fight_events.csv
 events.to_csv("fight_events.csv", index=False)
 
@@ -40,6 +43,9 @@ fight_results = pd.read_csv("ufc_fight_results.csv")
 # change all column names to lowercase
 fight_results.columns = fight_results.columns.str.lower()
 
+# Strip leading/trailing whitespace from the 'event' column to ensure clean matching.
+fight_results['event'] = fight_results['event'].str.strip()
+
 #fight_results.info()
 #print(fight_results.head())
 print(events.event[0])
@@ -56,7 +62,3 @@ fight_results.to_csv("fight_results.csv", index=False)
 
 #fight_results.info()
 #print(fight_results.head())
-
-
-
-
